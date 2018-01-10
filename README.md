@@ -1,41 +1,39 @@
-
-
 # Welcome to Clustering!
+
+
 
 Solve Business problem in Python and R
 ---
 
-
    There is a big Mall in a specific city that contains information of its clients that subscribed to the membership card. When the customers subscribed to the membership card, they provided info like their gender, age, annual income, spending score ( values between 1 and 100 so that the close to 1 spending score less the client spent, and close to 100 spending score more the client spent, score based to some criteria: income, the amount of dollars spent, number of times per week shown in mall etc.).
    
-  **My job is to segment the clients into groups based to annual income and spending score** ( 2 variables for simplicity ). The mall doesn’t know – which are the segments and how many segments, this is typically clustering problem because we don’t know the answers.
+  **My job is to segment the clients into groups based to annual income and spending score** ( 2 variables for simplicity ). The mall doesn’t know – which are the segments and how many segments are, this is typically clustering problem because we don’t know the answers.
   
-  Clustering is similar to classification, but the basis is different. In Clustering you don’t know what you are looking for, and you are trying to identify some segments or clusters in your data. When you use clustering algorithms on your dataset, unexpected things can suddenly pop up like structures, clusters/groupings you would have never thought of otherwise. In this part, you will understand and learn how to implement the following Machine Learning Clustering models:
+  Clustering is similar to classification, but the basis is different. In Clustering you don’t know what you are looking for, and you are trying to identify some segments or clusters in your data. When you use clustering algorithms on your dataset, unexpected things can suddenly pop up like structures, clusters/groupings you would have never thought of otherwise. In the following, you will understand and learn how to implement the following Machine Learning Clustering model:
   
 ***Hierarchical Clustering***
-
 
 ![whathcdoesforyou](https://user-images.githubusercontent.com/25092397/34782400-3559066e-f631-11e7-9b67-5142858aceda.png)
 
 *Enjoy Machine Learning!*
 
-
 ## Hierarchical Clustering Intuition
 
-  In this section will talk about Hierarchical Clustering Algorithm (HC). It allows you to cluster data, it’s very convenient tool for discovering categories groups of data set and in this section will learn how to understand K-Means in intuitive levels. Let’s dive into it: Let’s decide we have 2 variables in our data set and we decide to plot those variables on X and Y axes.  
+  In this section will talk about Hierarchical Clustering Algorithm (HC). It allows you to cluster data, it’s very convenient tool for discovering categories groups of data set and in this section will learn how to understand HC in intuitive levels. Let’s dive into it:  
+  Let’s decide we have 2 variables in our data set and we decide to plot those variables on X and Y axes.  
   
 ---
 The question is: 
 ---
 Can we identify certain groups among variables and how would we go about doing it ?!  
-Yes, let’s see how!   Are you excited ?! Because I really am !
+Yes, let’s see how!
 
 What is Hierarchical Clustering ?! 
-If you have points on your scatterplot or data points, if you apply Hierarchical Clustering (HC for short) what will happening you will get clustering very similar with K-Means. Most of time same as K-Means but different process.  
+If you have points on your scatterplot or data points, if you apply Hierarchical Clustering (HC for short) what will happen you will get clustering very similar with K-Means. Most of time same as K-Means but different process.  
 
 First thing: 2 types of HC : Agglomerative & Divisive.
 Agglomerative is the bottom up approach and you will see in more detail what that means.
-In this course I’ll focus on Agglomerative approach.  
+I’ll focus on Agglomerative approach.  
 
 **How does it work?!**
 
@@ -55,11 +53,11 @@ In this course I’ll focus on Agglomerative approach.
 
 
 
-One thing that stands out here is the word **‘closest cluster‘** ( you can use Euclidian etc. ) but here we are actually talking about proximity of clusters not point. How you measure distance between clusters?! 
+One thing that stands out here, the word **‘closest cluster‘** ( you can use Euclidian, Manhattan, Chessboard distance etc. ) but here we are actually talking about proximity of clusters not point. How you measure distance between clusters?! 
 Euclidian distance (just to get this out of the way) in 2-dimensional space (X and Y axes) is calculated like that. 
 ![euclidiandistance](https://user-images.githubusercontent.com/25092397/34784104-024462f0-f636-11e7-9e14-d6d440595d74.png)
   
-There are other types of distances that you could be invoking in algorithm and it really depends on the scenario. 
+
 Distance between two clusters:   
 ***Option 1 : closest points   
 Option 2 : furthest points  
@@ -68,7 +66,7 @@ Option 4 : distance between centroids***
 
 It’s a very important part of Hierarchical Clustering (HC) what you define as a distance between 2 clusters because that can significantly impact the output of your algorithm. I'm not going deep into this is just something to remember, to note, based on your particular situation (business problem, data science, etc.) you need to define the distance. 
 
-The way that HC agglomerative works is that it maintains memory of how we went to this process and that memory is stored in dendrogram. We'll cover this in a few! Enjoy
+The way that HC agglomerative works is that it maintains memory of how we went to this process and that memory is stored in dendrogram. 
 
 
 ## How do dendrograms work?!  
