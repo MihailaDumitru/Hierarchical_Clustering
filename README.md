@@ -25,7 +25,7 @@ Solve Business problem in Python and R
 ---
 The question is: 
 ---
-Can we identify certain groups among variables and how would we go about doing it ?!  
+Can we identify certain groups among variables?!  
 Yes, let’s see how!
 
 What is Hierarchical Clustering ?! 
