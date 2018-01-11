@@ -19,7 +19,7 @@ Solve Business problem in Python and R
 
 ## Hierarchical Clustering Intuition
 
-  In this section will talk about Hierarchical Clustering Algorithm (HC). It allows you to cluster data, it’s very convenient tool for discovering categories groups of data set and in this section will learn how to understand HC in intuitive levels. Let’s dive into it:  
+  In this section will talk about Hierarchical Clustering Algorithm (HC). It allows you to cluster data, it’s a very convenient tool for discovering categories groups of data set and in this section will learn how to understand HC in intuitive levels. Let’s dive into it:  
   Let’s decide we have 2 variables in our data set and we decide to plot those variables on X and Y axes.  
   
 ---
