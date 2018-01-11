@@ -53,8 +53,7 @@ I’ll focus on Agglomerative approach.
 
 
 
-One thing that stands out here, the word **‘closest cluster‘** ( you can use Euclidian, Manhattan, Chessboard distance etc. ) but here we are actually talking about proximity of clusters not point. How you measure distance between clusters?! 
-Euclidian distance (just to get this out of the way) in 2-dimensional space (X and Y axes) is calculated like that: 
+One thing that stands out here, the word **‘closest cluster‘** ( you can use Euclidian, Manhattan, Chessboard distance etc. ) but here we are actually talking about proximity of clusters, not points. As a measure distance between clusters, I used Euclidian distance (just to get this out of the way) in 2-dimensional space (X and Y axes) is calculated like that: 
 ![euclidiandistance](https://user-images.githubusercontent.com/25092397/34784104-024462f0-f636-11e7-9e14-d6d440595d74.png)
   
 
