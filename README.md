@@ -29,7 +29,7 @@ Can we identify certain groups among variables?!
 Yes, let’s see how!
 
 What is Hierarchical Clustering ?! 
-If you have points on your scatterplot or data points, if you apply Hierarchical Clustering (HC for short) what will happen you will get clustering very similar with K-Means. Most of time same as K-Means but different process.  
+If you have points on your scatterplot or data points, if you apply Hierarchical Clustering (HC for short) what will happen you will get clustering very similar with K-Means but the process is different. 
 
 First thing: 2 types of HC : Agglomerative & Divisive.
 Agglomerative is the bottom up approach and you will see in more detail what that means.
