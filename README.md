@@ -32,7 +32,7 @@ What is Hierarchical Clustering ?!
 If you have points on your scatterplot or data points, if you apply Hierarchical Clustering (HC for short) what will happen you will get clustering very similar with K-Means but the process is different. 
 
 First thing: 2 types of HC : Agglomerative & Divisive.
-Agglomerative is the bottom up approach and you will see in more detail what that means.
+Agglomerative is the bottom up approach and you will see in detail what that means.
 I’ll focus on Agglomerative approach.  
 
 **How does it work?!**
