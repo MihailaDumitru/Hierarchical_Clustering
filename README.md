@@ -54,7 +54,7 @@ I’ll focus on Agglomerative approach.
 
 
 One thing that stands out here, the word **‘closest cluster‘** ( you can use Euclidian, Manhattan, Chessboard distance etc. ) but here we are actually talking about proximity of clusters not point. How you measure distance between clusters?! 
-Euclidian distance (just to get this out of the way) in 2-dimensional space (X and Y axes) is calculated like that. 
+Euclidian distance (just to get this out of the way) in 2-dimensional space (X and Y axes) is calculated like that: 
 ![euclidiandistance](https://user-images.githubusercontent.com/25092397/34784104-024462f0-f636-11e7-9e14-d6d440595d74.png)
   
 
@@ -64,19 +64,19 @@ Option 2 : furthest points
 Option 3 : average distance   
 Option 4 : distance between centroids***    
 
-It’s a very important part of Hierarchical Clustering (HC) what you define as a distance between 2 clusters because that can significantly impact the output of your algorithm. I'm not going deep into this is just something to remember, to note, based on your particular situation (business problem, data science, etc.) you need to define the distance. 
+It’s a very important part of Hierarchical Clustering (HC) what you define as a distance between 2 clusters because that can significantly impact the output of your algorithm. I'm not going deep into this, is just something to remember, to note, based on your particular situation (business problem, data science, etc.) you need to define your distance measure. 
 
-The way that HC agglomerative works is that it maintains memory of how we went to this process and that memory is stored in dendrogram. 
+The way that HC agglomerative works is that it maintains memory of how we went to this process and that memory is stored in Dendrogram. 
 
 
-## How do dendrograms work?!  
+## How Dendrograms works?!  
 
 Dendrogram is kind of memory of the HC algorithm. Is going to remember every single step that we'll perform.
 Two points have a certain dissimilarity which is measured by the distance between them, so the distance represent the dissimilarity between these 2 points. The point here is that, the further away 2 points are, the more dissimilarity they have. And that is measured (captured) on in dendrogram by the height of the bar.  
 ![howdodendogramswork](https://user-images.githubusercontent.com/25092397/34784229-62e861f6-f636-11e7-92c0-2dd578f5c588.png)
   
 Our final step is to combine the last 2 clusters, and we'll represent that on dendrogram.
-That is how we construct the dendrogram slowly from the bottom to up, and at the end we will get:  
+That is how we construct the dendrogram slowly from the bottom to up, and at the end, we will get:  
 ![howdodendogramswork2](https://user-images.githubusercontent.com/25092397/34784286-87aee6cc-f636-11e7-9b44-e82dd4fafa83.png)
 
 The optimal number of clusters: we need to find the largest vertical distance that we can make without  crossing any other horizontal line and then we need to count the number of vertical line of this level. In this example is 2 
